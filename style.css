@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: .5rem;
+}
+
+body {
+    background-color: #222;
+    color: #ddd;
+    font-family: sans-serif;
+}
+form, input, label, button {
+    font-family: sans-serif;
+}
+
+.app {
+    width: 80%;
+    margin: 3rem auto;
+}
