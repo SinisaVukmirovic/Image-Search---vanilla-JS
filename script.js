@@ -1,3 +1,5 @@
+import searchImage from './apiCall.js';
+
 const form = document.querySelector('form');
 const searchingImg = document.querySelector('#searchingImg');
 
@@ -13,6 +15,7 @@ form.addEventListener('submit', (event) => {
     const searchTerm = formData.get('search-term');
 
     searchingImg.style.display = '';
-    console.log(searchTerm);
+    
+    searchImage(searchTerm);
     
 });
