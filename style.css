@@ -7,6 +7,7 @@ body {
     background-color: #222;
     color: #ddd;
     font-family: sans-serif;
+    text-align: center;
 }
 form, input, label, button {
     font-family: sans-serif;
