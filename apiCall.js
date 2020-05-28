@@ -5,6 +5,5 @@ export default async function searchImage(searchTerm) {
 
     const json = await response.json();
 
-    console.log(json);
-    return json;
+    return json.images;
 }
