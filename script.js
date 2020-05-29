@@ -15,6 +15,7 @@ form.addEventListener('submit', async (event) => {
     // FormData allows us to get access to any element inside that form that has a name property
     const searchTerm = formData.get('search-term');
 
+    imagesSection.innerHTML = '';
     searchingImg.style.display = '';
     
     const images = await searchImage(searchTerm);
@@ -24,8 +25,6 @@ form.addEventListener('submit', async (event) => {
 });
 
 function displayImages(images) {
-    imagesSection.innerHTML = '';
-
     images.forEach(item => {
         const imgElem = document.createElement('img');
 
